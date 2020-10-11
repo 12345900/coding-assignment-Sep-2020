@@ -1,0 +1,30 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        int arr[] = new int[]{7980, 22349,999,2799,229900, 11101,9999,2195,9800,4999}; 
+           int arrOutPut[] = new int[10];
+    
+         int diff = Integer.MAX_VALUE; 
+      int n = arr.length;
+      
+        // Find the min diff by comparing difference 
+        // of all possible pairs in given array 
+        for (int i=0; i<n; i++) {
+              for (int j=i+1; j<n; j++) {
+       if (Math.abs((arr[i] - arr[j]) )< diff) {
+          
+           
+       diff = Math.abs((arr[i] - arr[j])); 
+  System.out.println( arr[i] + " \n"+ arr[j] );
+ 
+
+           }
+                             
+              }
+        }
+     }
+        
+ 
+     
+    
+}
